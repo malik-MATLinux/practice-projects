@@ -15,13 +15,16 @@ int main(){
     printf("Number of questions is : %ld\n\n", sizeof(questions) / sizeof(questions[0]));
 
 
-    /*  Ternery operator below
+    /*  Ternery operator below to determine if users input is even or odd number
     */
 
-    int a = 10;
+    int a;
     int b = 20;
-    int max;    
+    int result;
+    printf("Enter a number to find out if it's an Even no or Odd no: ");
+    scanf("%d", &a);
 
-    max = (a + b == 30) ? printf("a plus b is 30\n\n") : printf("wrong answer not 50\n\n");
+    printf("\nThe number you entered \(%d\) is an %s number\n\n", a, (a%2 == 0) ? "Even" : "Odd");
+    
     return 0;
 }
