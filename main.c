@@ -20,11 +20,13 @@ int main(){
 
     int a;
     int b = 20;
-    int result;
+    
     printf("Enter a number to find out if it's an Even no or Odd no: ");
     scanf("%d", &a);
+    char* result = (a%2 == 0) ? "Even" : "Odd";
+    
 
-    printf("\nThe number you entered \(%d\) is an %s number\n\n", a, (a%2 == 0) ? "Even" : "Odd");
+    printf("\nThe number you entered \(%d\) is an %s number\n\n", a, result);
     
     return 0;
 }
